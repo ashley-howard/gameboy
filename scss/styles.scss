@@ -1,0 +1,48 @@
+@import 'reset';
+
+//dimensions
+$d1: 60vh;
+$d2: 93vh;
+
+// border radiuses
+$br: 3vh;
+$brr: 20vh;
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-body {
+    position: absolute;
+    background: #EAE1DC;
+    width: $d1;
+    height: $d2;
+    display: flex;
+    justify-content: center;
+    border-radius: $br;
+    border-bottom-right-radius: $brr;
+}
+
+.game-screen {
+    position: absolute;
+    background: #858391;
+    width: $d2 / 2;
+    height: $d1 / 1.7;
+    top: 9vh;
+    border-radius: $br;
+    border-bottom-right-radius: $brr / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    position: absolute;
+    background: green;
+    width: $d2 / 3.1;
+    height: $d1 / 2.4;
+}
