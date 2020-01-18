@@ -11,6 +11,8 @@ $brr: 20vh;
 .container {
     width: 100vw;
     height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +52,10 @@ $brr: 20vh;
 
 @media only screen and (max-width: 385px) {
     .game-body {
-      background: none;
+        background: none;
     }
 
     .container {
         background: #EAE1DC;
     }
-  }
+}
