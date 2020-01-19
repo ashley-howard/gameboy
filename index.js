@@ -15,24 +15,28 @@ var counter = 1;
 
 document.getElementById(`link-${counter}`).focus();
 
-function dpad(direction) {
+function button(key) {
 
-    if (direction == 'up') {
+    if (key == 'up') {
         counter -= 1
     }
-    else if (direction == 'right') {
+    else if (key == 'right') {
 
     }
-    else if (direction == 'down') {
+    else if (key == 'down') {
         //change the focus to link-2
         counter += 1
 
     }
-    else if (direction == 'left') {
+    else if (key == 'left') {
 
     }
-    else {
-        console.log('d pad error')
+
+    if (key === 'a') {
+        document.getElementById(`link-${counter}`).click();
+    }
+    else if (key === 'b') {
+        window.history.back()
     }
 
     if (counter === 0) {
@@ -43,6 +47,6 @@ function dpad(direction) {
     }
 
     event.preventDefault()
-    console.log(direction)
+    console.log(key)
     document.getElementById(`link-${counter}`).focus();
 }
