@@ -14,9 +14,24 @@
     <div class="container">
         <div class="game-body">
             <div class="game-screen">
-                <div id="screen"></div>
+                <div id="screen">
+                    <ul>
+                        <li><a href="#" id="link-1">Home</a></li>
+                        <li><a href="#" id="link-2">About</a></li>
+                        <li><a href="#" id="link-3">Contact</a></li>
+                    </ul>
+
+                </div>
             </div>
-            <div class="game-d-pad"></div>
+            <div class="game-d-pad">
+
+                <div class="d-pad--up" id="up" onclick="dpad('up')"></div>
+                <div class="d-pad--right" id="right" onclick="dpad('right')"></div>
+                <div class="d-pad--down" id="down" onclick="dpad('down')"></div>
+                <div class="d-pad--left" id="left" onclick="dpad('left')"></div>
+                <div class="d-pad--center"></div>
+
+            </div>
             <div class="game-right-btns"></div>
             <div class="game-bottom-btns"></div>
         </div>
